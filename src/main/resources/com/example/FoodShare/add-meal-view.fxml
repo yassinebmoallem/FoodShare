@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FoodShare.AddMealController">
+    <padding>
+        <Insets bottom="40.0" left="50.0" right="50.0" top="40.0"/>
+    </padding>
+
+    <Label text="إضافة وجبة جديدة">
+        <font>
+            <Font name="System Bold" size="32.0"/>
+        </font>
+    </Label>
+
+    <VBox spacing="18.0" maxWidth="450.0">
+        <VBox.margin>
+            <Insets top="30.0"/>
+        </VBox.margin>
+
+        <VBox spacing="6.0">
+            <Label text="اسم الوجبة">
+                <font>
+                    <Font size="14.0"/>
+                </font>
+            </Label>
+            <TextField fx:id="nameField" promptText="مثال: أرز وفراخ" prefHeight="40.0">
+                <font>
+                    <Font size="13.0"/>
+                </font>
+            </TextField>
+        </VBox>
+
+        <VBox spacing="6.0">
+            <Label text="الكمية">
+                <font>
+                    <Font size="14.0"/>
+                </font>
+            </Label>
+            <TextField fx:id="quantityField" promptText="عدد الوجبات" prefHeight="40.0">
+                <font>
+                    <Font size="13.0"/>
+                </font>
+            </TextField>
+        </VBox>
+
+        <VBox spacing="6.0">
+            <Label text="الوصف">
+                <font>
+                    <Font size="14.0"/>
+                </font>
+            </Label>
+            <TextArea fx:id="descriptionField" promptText="وصف الوجبة" prefHeight="80.0">
+                <font>
+                    <Font size="13.0"/>
+                </font>
+            </TextArea>
+        </VBox>
+
+        <VBox spacing="6.0">
+            <Label text="الموقع">
+                <font>
+                    <Font size="14.0"/>
+                </font>
+            </Label>
+            <TextField fx:id="locationField" promptText="موقع الوجبة" prefHeight="40.0">
+                <font>
+                    <Font size="13.0"/>
+                </font>
+            </TextField>
+        </VBox>
+
+        <Label fx:id="messageLabel" text="" wrapText="true" minHeight="25.0">
+            <font>
+                <Font size="13.0"/>
+            </font>
+        </Label>
+
+        <Button text="إضافة الوجبة" onAction="#handleAddMeal" prefHeight="50.0" prefWidth="450.0"
+                style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 16px; -fx-cursor: hand;">
+            <VBox.margin>
+                <Insets top="10.0"/>
+            </VBox.margin>
+        </Button>
+
+        <Button text="رجوع" onAction="#handleBack" prefHeight="45.0" prefWidth="450.0"
+                style="-fx-background-color: #757575; -fx-text-fill: white; -fx-font-size: 14px; -fx-cursor: hand;">
+        </Button>
+    </VBox>
+</VBox>

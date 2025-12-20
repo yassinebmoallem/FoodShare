@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FoodShare.RegisterController">
+    <padding>
+        <Insets bottom="40.0" left="50.0" right="50.0" top="40.0"/>
+    </padding>
+
+    <Label text="إنشاء حساب جديد">
+        <font>
+            <Font name="System Bold" size="32.0"/>
+        </font>
+    </Label>
+
+    <VBox spacing="15.0" maxWidth="450.0">
+        <VBox.margin>
+            <Insets top="25.0"/>
+        </VBox.margin>
+
+        <VBox spacing="6.0">
+            <Label text="الاسم">
+                <font>
+                    <Font size="14.0"/>
+                </font>
+            </Label>
+            <TextField fx:id="nameField" promptText="أدخل اسمك الكامل" prefHeight="38.0">
+                <font>
+                    <Font size="13.0"/>
+                </font>
+            </TextField>
+        </VBox>
+
+        <VBox spacing="6.0">
+            <Label text="البريد الإلكتروني">
+                <font>
+                    <Font size="14.0"/>
+                </font>
+            </Label>
+            <TextField fx:id="emailField" promptText="example@email.com" prefHeight="38.0">
+                <font>
+                    <Font size="13.0"/>
+                </font>
+            </TextField>
+        </VBox>
+
+        <VBox spacing="6.0">
+            <Label text="الموقع">
+                <font>
+                    <Font size="14.0"/>
+                </font>
+            </Label>
+            <TextField fx:id="locationField" promptText="أدخل موقعك" prefHeight="38.0">
+                <font>
+                    <Font size="13.0"/>
+                </font>
+            </TextField>
+        </VBox>
+
+        <VBox spacing="6.0">
+            <Label text="رقم الهاتف">
+                <font>
+                    <Font size="14.0"/>
+                </font>
+            </Label>
+            <TextField fx:id="phoneField" promptText="أدخل رقم الهاتف" prefHeight="38.0">
+                <font>
+                    <Font size="13.0"/>
+                </font>
+            </TextField>
+        </VBox>
+
+        <VBox spacing="6.0">
+            <Label text="نوع الحساب">
+                <font>
+                    <Font size="14.0"/>
+                </font>
+            </Label>
+            <ComboBox fx:id="roleComboBox" promptText="اختر نوع الحساب" prefHeight="38.0" prefWidth="450.0">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="متبرع"/>
+                        <String fx:value="مستفيد"/>
+                    </FXCollections>
+                </items>
+            </ComboBox>
+        </VBox>
+
+        <VBox spacing="6.0">
+            <Label text="كلمة السر">
+                <font>
+                    <Font size="14.0"/>
+                </font>
+            </Label>
+            <PasswordField fx:id="passwordField" promptText="أدخل كلمة السر" prefHeight="38.0">
+                <font>
+                    <Font size="13.0"/>
+                </font>
+            </PasswordField>
+        </VBox>
+
+        <VBox spacing="6.0">
+            <Label text="إعادة كلمة السر">
+                <font>
+                    <Font size="14.0"/>
+                </font>
+            </Label>
+            <PasswordField fx:id="confirmPasswordField" promptText="أعد إدخال كلمة السر" prefHeight="38.0">
+                <font>
+                    <Font size="13.0"/>
+                </font>
+            </PasswordField>
+        </VBox>
+
+        <Label fx:id="messageLabel" text="" wrapText="true" minHeight="25.0">
+            <font>
+                <Font size="13.0"/>
+            </font>
+        </Label>
+
+        <Button text="إنشاء حساب" onAction="#handleCreateAccount" prefHeight="45.0" prefWidth="450.0"
+                style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 16px; -fx-cursor: hand;">
+            <VBox.margin>
+                <Insets top="10.0"/>
+            </VBox.margin>
+        </Button>
+
+        <Button text="رجوع" onAction="#handleBack" prefHeight="40.0" prefWidth="450.0"
+                style="-fx-background-color: #757575; -fx-text-fill: white; -fx-font-size: 14px; -fx-cursor: hand;">
+        </Button>
+    </VBox>
+</VBox>
