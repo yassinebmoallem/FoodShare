@@ -386,7 +386,7 @@ Liste complète avec toutes les informations nécessaires
 
 ## 👥 Contributeurs
 
-- **Yassine Ben Maallem** - Développeur principal - [GitHub](https://github.com/yassinebmoallem) | [LinkedIn](https://www.linkedin.com/in/yassine-ben-maallem-02b87330b/)
+- **Yassine Ben Maallem** - Développeur principal - [GitHub](https://github.com/yassinebmoallem) | [LinkedIn](https://www.linkedin.com/in/yassine-ben-maalem/)
 
 ---
 
