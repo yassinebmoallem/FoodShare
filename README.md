@@ -417,7 +417,7 @@ Les contributions sont les bienvenues ! Pour contribuer :
 ## 📧 Contact
 
 Pour toute question, suggestion ou collaboration :
-- **Email** : yassinebenmoallem5@gmail.com
+- **Email** : yassine.bmaalem@gmail.com
 - **LinkedIn** : [Yassine Ben Maallem](https://www.linkedin.com/in/yassine-ben-maallem-02b87330b/)
 - **GitHub** : [@yassinebmoallem](https://github.com/yassinebmoallem)
 
